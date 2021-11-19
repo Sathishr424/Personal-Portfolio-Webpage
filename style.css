@@ -76,18 +76,34 @@ html{
 .img_container{
 	height: calc(100% - 6.8rem);
 	width: 100%;
-}.ROW{
+}
+.ROW{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0px 10%;
 	padding: 20px 5px;
-}.COL{
+}
+.COL{
 	text-align: center;
 	box-shadow: 1px 1px 10px 2px #224b4b;
 	margin: 15px;
-}.project-tile{
+}
+
+@media (max-width: 800px){
+	.ROW{
+		display: flex;
+		flex-direction: row;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0px 10%;
+		padding: 20px 5px;
+	}
+}
+
+.project-tile{
 	padding: 10px 0px;
 	color: white;
 	font-family: 'Raleway', sans-serif;
